@@ -323,7 +323,7 @@ fi
 if [[ -z "$tmpDIST" ]]; then
   [ "$Relese" == 'Debian' ] && tmpDIST='bullseye';
   [ "$Relese" == 'Ubuntu' ] && tmpDIST='focal';
-  [ "$Relese" == 'CentOS' ] && tmpDIST='6.10';
+  [ "$Relese" == 'CentOS' ] && tmpDIST='7';
 fi
 
 if [[ -n "$tmpDIST" ]]; then
@@ -382,9 +382,9 @@ fi
 
 if [[ -z "$LinuxMirror" ]]; then
   echo -ne "\033[31mError! \033[0mInvaild mirror! \n"
-  [ "$Relese" == 'Debian' ] && echo -en "\033[33mexample:\033[0m http://deb.debian.org/debian\n\n";
-  [ "$Relese" == 'Ubuntu' ] && echo -en "\033[33mexample:\033[0m http://archive.ubuntu.com/ubuntu\n\n";
-  [ "$Relese" == 'CentOS' ] && echo -en "\033[33mexample:\033[0m http://mirror.centos.org/centos\n\n";
+  [ "$Relese" == 'Debian' ] && echo -en "\033[33mexample:\033[0m https://deb.debian.org/debian\n\n";
+  [ "$Relese" == 'Ubuntu' ] && echo -en "\033[33mexample:\033[0m https://archive.ubuntu.com/ubuntu\n\n";
+  [ "$Relese" == 'CentOS' ] && echo -en "\033[33mexample:\033[0m https://mirror.centos.org/centos\n\n";
   bash $0 error;
   exit 1;
 fi
