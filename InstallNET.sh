@@ -340,6 +340,7 @@ if [[ -n "$tmpDIST" ]]; then
         [[ "$isDigital" == '10' ]] && DIST='buster';
         [[ "$isDigital" == '11' ]] && DIST='bullseye';
         [[ "$isDigital" == '12' ]] && DIST='bookworm';
+        [[ "$isDigital" == '13' ]] && DIST='trixie';
       }
     }
     LinuxMirror=$(selectMirror "$Relese" "$DIST" "$VER" "$tmpMirror")
@@ -357,6 +358,7 @@ if [[ -n "$tmpDIST" ]]; then
         [[ "$isDigital" == '18.04' ]] && DIST='bionic';
         [[ "$isDigital" == '20.04' ]] && DIST='focal';
         [[ "$isDigital" == '22.04' ]] && DIST='jammy';
+        [[ "$isDigital" == '23.04' ]] && DIST='lunar';
       }
     }
     LinuxMirror=$(selectMirror "$Relese" "$DIST" "$VER" "$tmpMirror")
